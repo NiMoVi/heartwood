@@ -87,7 +87,7 @@ function Header({ view, go, theme, toggleTheme }) {
       <div className="wrap hdr-in">
         <a className="brand" onClick={() => go('home')}>
           <img src="assets/mark.svg" alt="" />
-          <span className="wm">Heart<i>wood</i></span>
+          <span className="wm">Nico <i>Mora</i></span>
         </a>
         <nav className="nav">
           {links.map(([k, label]) => (

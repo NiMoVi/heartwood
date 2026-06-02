@@ -1,0 +1,339 @@
+/* =====================================================================
+   HEARTWOOD — Design System Foundations
+   colors_and_type.css
+
+   A portfolio brand where old-growth forest meets embedded technology.
+   Primary theme is dark ("deep forest"); a parchment light theme is
+   provided via [data-theme="light"].
+
+   Fonts are loaded from Google Fonts. For offline / production use,
+   download the woff2 files into /fonts and swap the @import for
+   @font-face rules. (See README "Caveats".)
+   ===================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+:root {
+  /* ---------------------------------------------------------------
+     1. COLOR PRIMITIVES  (raw palette — do not use directly in UI;
+        reference the semantic tokens below instead)
+     --------------------------------------------------------------- */
+
+  /* Forest darks — the canopy floor at dusk */
+  --canopy-950: #0A120D;   /* deepest background */
+  --canopy-900: #0E1812;   /* page background */
+  --canopy-850: #12201A;   /* understory / surface */
+  --canopy-800: #182A21;   /* elevated surface */
+  --canopy-700: #20382C;   /* hover surface */
+
+  /* Bark & soil — warm structural neutrals */
+  --bark-700:  #2B3830;    /* hairline borders ("bark lines") */
+  --bark-600:  #3A4A3F;    /* strong borders */
+  --bark-500:  #4A2F1E;    /* warm bark accent (sparing) */
+
+  /* Birch & parchment — light foreground tones */
+  --birch-50:  #F4F1E7;    /* primary text on dark */
+  --birch-100: #EAE7D9;
+  --birch-200: #D6D8CB;
+
+  /* Lichen & sage — muted greens for secondary text */
+  --lichen-400: #A6B8AB;   /* secondary text */
+  --lichen-500: #7E9384;   /* tertiary / muted text */
+  --lichen-600: #5C7163;   /* disabled / faint */
+
+  /* Foliage — living green midtones */
+  --moss-700: #2F5239;
+  --moss-600: #3E6B4A;
+  --moss-500: #4F7D5B;
+  --fern-400: #6FA873;
+
+  /* Signal green — bioluminescence. The brand accent. */
+  --signal-300: #C5F5A0;
+  --signal-400: #A6EE74;
+  --signal-500: #8BE06A;   /* PRIMARY ACCENT */
+  --signal-600: #5FB845;
+  --signal-glow: rgba(139, 224, 106, 0.35);
+
+  /* Amber — canopy sunlight. Secondary accent, used sparingly. */
+  --amber-400: #F0C06A;
+  --amber-500: #E6A94E;
+  --amber-600: #C8893A;
+
+  /* Status hues, tuned to the palette */
+  --berry-500: #D9694F;    /* error / alert (rosehip) */
+  --honey-500: #E6A94E;    /* warning (reuses amber) */
+  --sky-500:   #6FB6C9;    /* info (clearing sky) */
+
+  --pure-white: #FFFFFF;
+  --pure-black: #000000;
+
+  /* ---------------------------------------------------------------
+     2. SEMANTIC COLOR TOKENS  (use THESE in UI)
+     --------------------------------------------------------------- */
+  --bg:            var(--canopy-900);
+  --bg-deep:       var(--canopy-950);
+  --surface:       var(--canopy-850);
+  --surface-2:     var(--canopy-800);
+  --surface-hover: var(--canopy-700);
+
+  --border:        var(--bark-700);
+  --border-strong: var(--bark-600);
+
+  --fg:            var(--birch-50);   /* primary text */
+  --fg-2:          var(--lichen-400); /* secondary text */
+  --fg-muted:      var(--lichen-500); /* tertiary text */
+  --fg-faint:      var(--lichen-600); /* disabled */
+
+  --accent:        var(--signal-500);
+  --accent-hover:  var(--signal-400);
+  --accent-press:  var(--signal-600);
+  --accent-soft:   rgba(139, 224, 106, 0.12);
+  --accent-fg:     var(--canopy-950); /* text on accent fills */
+  --glow:          var(--signal-glow);
+
+  --accent-2:      var(--amber-500);  /* sunlight, secondary */
+
+  --danger:        var(--berry-500);
+  --warning:       var(--honey-500);
+  --info:          var(--sky-500);
+  --success:       var(--signal-500);
+
+  /* ---------------------------------------------------------------
+     3. TYPOGRAPHY
+     --------------------------------------------------------------- */
+  --font-display: 'Spectral', Georgia, 'Times New Roman', serif;
+  --font-body:    'Hanken Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono:    'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+
+  /* Type scale — 1.250 (major third), 16px base */
+  --text-xs:   0.75rem;   /* 12px — mono labels, captions */
+  --text-sm:   0.875rem;  /* 14px */
+  --text-base: 1rem;      /* 16px — body */
+  --text-lg:   1.25rem;   /* 20px */
+  --text-xl:   1.563rem;  /* 25px */
+  --text-2xl:  1.953rem;  /* 31px */
+  --text-3xl:  2.441rem;  /* 39px */
+  --text-4xl:  3.052rem;  /* 49px */
+  --text-5xl:  3.815rem;  /* 61px */
+  --text-6xl:  4.768rem;  /* 76px — hero display */
+
+  --leading-tight:  1.08;
+  --leading-snug:   1.25;
+  --leading-normal: 1.6;
+  --leading-loose:  1.8;
+
+  --tracking-tight:  -0.02em;
+  --tracking-normal: 0;
+  --tracking-wide:   0.04em;
+  --tracking-label:  0.18em;  /* mono eyebrow labels */
+
+  /* ---------------------------------------------------------------
+     4. SPACING  (4px base unit)
+     --------------------------------------------------------------- */
+  --space-1:  0.25rem;  /* 4 */
+  --space-2:  0.5rem;   /* 8 */
+  --space-3:  0.75rem;  /* 12 */
+  --space-4:  1rem;     /* 16 */
+  --space-5:  1.5rem;   /* 24 */
+  --space-6:  2rem;     /* 32 */
+  --space-7:  3rem;     /* 48 */
+  --space-8:  4rem;     /* 64 */
+  --space-9:  6rem;     /* 96 */
+  --space-10: 8rem;     /* 128 */
+
+  /* ---------------------------------------------------------------
+     5. RADII  (subtle, organic — never pill-y on big surfaces)
+     --------------------------------------------------------------- */
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 14px;
+  --radius-xl: 22px;
+  --radius-pill: 999px;
+
+  /* ---------------------------------------------------------------
+     6. ELEVATION  (shadows + bioluminescent glows)
+     --------------------------------------------------------------- */
+  --shadow-sm:  0 1px 2px rgba(0,0,0,0.4);
+  --shadow-md:  0 6px 18px rgba(0,0,0,0.45);
+  --shadow-lg:  0 18px 50px rgba(0,0,0,0.55);
+  --shadow-inset: inset 0 1px 0 rgba(255,255,255,0.04);
+  --glow-sm: 0 0 0 1px rgba(139,224,106,0.25), 0 0 16px -2px var(--glow);
+  --glow-md: 0 0 0 1px rgba(139,224,106,0.30), 0 0 32px -4px var(--glow);
+
+  /* ---------------------------------------------------------------
+     7. MOTION
+     --------------------------------------------------------------- */
+  --ease-organic: cubic-bezier(0.22, 1, 0.36, 1);   /* settle / grow */
+  --ease-out:     cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out:  cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast:   140ms;
+  --dur-base:   240ms;
+  --dur-slow:   480ms;
+
+  /* Layout */
+  --maxw: 1200px;
+  --gutter: var(--space-6);
+}
+
+/* =====================================================================
+   LIGHT THEME — "Parchment & Birch"
+   ===================================================================== */
+[data-theme="light"] {
+  --bg:            #F2EEE2;
+  --bg-deep:       #E9E4D4;
+  --surface:       #FBF8EF;
+  --surface-2:     #FFFFFF;
+  --surface-hover: #F1EEE0;
+
+  --border:        #DAD3BF;
+  --border-strong: #C4BCA4;
+
+  --fg:            #14201A;
+  --fg-2:          #3F5246;
+  --fg-muted:      #62756A;
+  --fg-faint:      #94A294;
+
+  --accent:        #2F7D3E;       /* darkened signal for contrast */
+  --accent-hover:  #3B9A4E;
+  --accent-press:  #25632F;
+  --accent-soft:   rgba(47,125,62,0.10);
+  --accent-fg:     #FBF8EF;
+  --glow:          rgba(47,125,62,0.18);
+
+  --accent-2:      #C8893A;
+
+  --shadow-sm:  0 1px 2px rgba(40,46,38,0.10);
+  --shadow-md:  0 6px 18px rgba(40,46,38,0.12);
+  --shadow-lg:  0 18px 50px rgba(40,46,38,0.16);
+  --shadow-inset: inset 0 1px 0 rgba(255,255,255,0.6);
+  --glow-sm: 0 0 0 1px rgba(47,125,62,0.20), 0 0 16px -4px var(--glow);
+  --glow-md: 0 0 0 1px rgba(47,125,62,0.24), 0 0 28px -6px var(--glow);
+}
+
+/* =====================================================================
+   8. SEMANTIC TYPE CLASSES  (apply to elements directly)
+   ===================================================================== */
+
+.h-display {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: var(--text-6xl);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+  color: var(--fg);
+}
+.h1 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: var(--text-4xl);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+  color: var(--fg);
+}
+.h2 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: var(--text-3xl);
+  line-height: var(--leading-snug);
+  letter-spacing: var(--tracking-tight);
+  color: var(--fg);
+}
+.h3 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: var(--text-2xl);
+  line-height: var(--leading-snug);
+  color: var(--fg);
+}
+.h4 {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: var(--text-xl);
+  line-height: var(--leading-snug);
+  letter-spacing: var(--tracking-tight);
+  color: var(--fg);
+}
+.body-lg {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: var(--text-lg);
+  line-height: var(--leading-normal);
+  color: var(--fg-2);
+}
+.body {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: var(--text-base);
+  line-height: var(--leading-normal);
+  color: var(--fg-2);
+}
+.body-sm {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: var(--text-sm);
+  line-height: var(--leading-normal);
+  color: var(--fg-muted);
+}
+/* The signature "coordinate / metadata" label — monospace, tracked-out,
+   often prefixed with a glyph like ◦ or a number like 01 / */
+.label-mono {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: var(--text-xs);
+  line-height: 1;
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.code {
+  font-family: var(--font-mono);
+  font-weight: 400;
+  font-size: var(--text-sm);
+  line-height: var(--leading-normal);
+  color: var(--fg);
+}
+.quote {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-style: italic;
+  font-size: var(--text-2xl);
+  line-height: var(--leading-snug);
+  color: var(--fg);
+}
+
+/* =====================================================================
+   9. BASE RESET / DEFAULTS  (opt-in: scope under .hw-base if needed)
+   ===================================================================== */
+.hw-base {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: var(--leading-normal);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+.hw-base ::selection {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+/* Topographic contour background texture — a subtle brand motif.
+   Apply .hw-topo to any container. */
+.hw-topo {
+  background-image:
+    radial-gradient(120% 120% at 50% -10%, rgba(139,224,106,0.05), transparent 55%),
+    repeating-radial-gradient(circle at 30% 20%, transparent 0 38px, rgba(139,224,106,0.025) 38px 39px);
+}
+
+/* Fine grain overlay — apply to a ::before/full-bleed layer at low opacity */
+.hw-grain::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.5;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.35'/%3E%3C/svg%3E");
+}

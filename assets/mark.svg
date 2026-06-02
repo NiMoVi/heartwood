@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" role="img" aria-label="Heartwood mark">
+
+  <circle cx="50" cy="50" r="6" stroke="#8BE06A" stroke-width="2.2"></circle>
+  <circle cx="50" cy="50" r="16" stroke="#6FA873" stroke-width="2"></circle>
+  <circle cx="50" cy="50" r="26" stroke="#4F7D5B" stroke-width="1.8"></circle>
+
+  <circle cx="50" cy="50" r="36" stroke="#3E6B4A" stroke-width="1.6" stroke-dasharray="3 5"></circle>
+
+  <line x1="50" y1="50" x2="86" y2="50" stroke="#8BE06A" stroke-width="1.6"></line>
+  <circle cx="50" cy="50" r="2.4" fill="#8BE06A"></circle>
+  <circle cx="86" cy="50" r="3.2" fill="#0E1812" stroke="#8BE06A" stroke-width="1.8"></circle>
+</svg>

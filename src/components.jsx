@@ -14,19 +14,19 @@ const PROJECTS = [
       'I trained a small convolutional model on mel-spectrograms, then quantized it to fit in 180KB of flash. The recorder wakes on sound, classifies in 90ms, and logs a timestamped sighting to a local SD card.',
       'It now lives on twelve balconies across the city, quietly building a dawn-chorus map that no single observer could.'
     ],
-    pull: 'The forest was always computing. We just hadn’t learned to read its output.'
+    pull: 'The forest was always computing. We just hadn\'t learned to read its output.'
   },
   { id: 'mycelium', n: '02', year: '2023', kind: 'TOOLING', title: 'Mycelium',
     blurb: 'A build graph that spreads work across idle machines the way roots share nutrients.',
     tags: ['Go', 'Distributed', 'CLI'], accent: true,
-    lede: 'A distributed build cache and scheduler that treats your team’s laptops like a single forest floor — work flows to whoever has spare capacity.',
+    lede: 'A distributed build cache and scheduler that treats your team\'s laptops like a single forest floor — work flows to whoever has spare capacity.',
     facts: { Role: 'Systems design', Year: '2023', Stack: 'Go · gRPC · BLAKE3', Status: 'Open source' },
     body: [
-      'Most build farms are top-down: a central queue hands tasks to dumb workers. Forests don’t work that way. Mycelial networks route resources peer-to-peer, toward need.',
+      'Most build farms are top-down: a central queue hands tasks to dumb workers. Forests don\'t work that way. Mycelial networks route resources peer-to-peer, toward need.',
       'Mycelium hashes every build action and gossips results across the local network. If a teammate already compiled that target, you get their artifact in milliseconds.',
       'On a ten-person team it cut median CI time by 61% — mostly by never doing the same work twice.'
     ],
-    pull: 'Don’t schedule the work. Let it find the resources.'
+    pull: 'Don\'t schedule the work. Let it find the resources.'
   },
   { id: 'understory', n: '03', year: '2022', kind: 'INSTALLATION', title: 'Understory',
     blurb: 'A responsive light sculpture for a museum atrium that breathes with foot traffic.',

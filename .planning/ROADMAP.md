@@ -26,7 +26,7 @@ Full roadmap archive: `.planning/milestones/v1.0-ROADMAP.md`
 
 **Milestone Goal:** Replace 5 generic placeholder projects with 6 authentic real-world projects, each written in the CATR framework and fully rendering in the live site.
 
-- [ ] **Phase 4: Project Content Authoring** - Author all 6 project entries (CATR-structured) in src/data.js
+- [x] **Phase 4: Project Content Authoring** - Author all 6 project entries (CATR-structured) in src/data.js (completed 2026-06-03)
 - [ ] **Phase 5: Implementation & Validation** - Replace PROJECTS array, update stat counter, browser-verify all 6 entries
 
 ---
@@ -68,7 +68,7 @@ Plans:
 | 1. Foundation | v1.0 | 4/4 | Complete | 2026-06-03 |
 | 2. Content & Pages | v1.0 | 5/5 | Complete | 2026-06-03 |
 | 3. Polish & Deploy | v1.0 | 3/3 | Complete | 2026-06-03 |
-| 4. Project Content Authoring | v1.1 | 0/1 | Not started | - |
+| 4. Project Content Authoring | v1.1 | 0/1 | Complete    | 2026-06-03 |
 | 5. Implementation & Validation | v1.1 | 0/TBD | Not started | - |
 
 ---

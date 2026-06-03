@@ -261,3 +261,30 @@ button { font-family: inherit; cursor: pointer; }
   .nav { gap: 18px; }
   .nav a.hide-sm { display: none; }
 }
+
+/* --- 480px: small phones ------------------------------------------ */
+@media (max-width: 480px) {
+  .wrap { padding: 0 20px; }
+  /* Reduces side gutter: 375px - 40px = 335px content width */
+
+  .hero { padding: 56px 0 48px; }
+  /* Reduces excessive top/bottom padding on short phone screens */
+
+  .hero-cta { flex-wrap: wrap; }
+  /* Prevents side-by-side button overflow; allows vertical stacking */
+
+  .hero-cta .btn { width: 100%; justify-content: center; }
+  /* Full-width buttons when stacked */
+
+  .hero-stats { gap: 20px; }
+  /* Tightens stat spacing from 36px to fit three items in 335px */
+
+  .hdr-in { height: 56px; }
+  /* Reduces header height for compact mobile chrome */
+
+  .nav { gap: 12px; }
+  /* Tighter nav gap; prevents brand + links from crowding */
+
+  .note-row { grid-template-columns: 80px 1fr auto; gap: 12px; }
+  /* Narrower date column so content column has more room at 335px */
+}

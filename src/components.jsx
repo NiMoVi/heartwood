@@ -79,12 +79,19 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="wrap footer-in">
-        <span className="coord">LAST TENDED — MAY 2026 · 51.5074°N 0.1278°W</span>
+        <span className="coord">LAST TENDED — JUN 2026 · 25.7617°N 80.1918°W</span>
         <div className="socials">
-          <a aria-label="GitHub"><Icon name="git-branch" size={18} /></a>
-          <a aria-label="LinkedIn"><LinkedInIcon size={18} /></a>
-          <a aria-label="Email"><Icon name="mail" size={18} /></a>
-          <a aria-label="RSS"><Icon name="rss" size={18} /></a>
+          {SOCIAL.map(s => (
+            <a key={s.label}
+               href={s.href}
+               aria-label={s.label}
+               target={s.href.startsWith('mailto') ? undefined : '_blank'}
+               rel={s.href.startsWith('mailto') ? undefined : 'noopener noreferrer'}>
+              {s.label === 'LinkedIn'
+                ? <LinkedInIcon size={18} />
+                : <Icon name={s.icon} size={18} />}
+            </a>
+          ))}
         </div>
       </div>
     </footer>

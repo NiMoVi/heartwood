@@ -57,7 +57,7 @@ function ProjectDetail({ p, go, openProject }) {
               src={p.demo}
               title={`${p.title} demo`}
               width="100%"
-              height="600"
+              height="900"
               frameBorder="0"
               sandbox="allow-scripts allow-same-origin"
               style={{ display: 'block', border: 'none', borderRadius: 8 }}

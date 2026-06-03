@@ -109,6 +109,7 @@ const PROJECTS = [
     blurb: 'Built a PySide6 desktop application with two modular extractors — SQL Stored Procedure and SSIS Package — that parse legacy objects and output structured CSVs, substantially speeding cloud migration analysis.',
     tags: ['Python', 'PySide6', 'GitHub Copilot'],
     accent: false,
+    cover: 'assets/SQL-Modernization-Tools.png',
     lede: 'Cloud migration projects consistently hit the same bottleneck: no one had a fast, reliable way to audit legacy SQL stored procedures and SSIS packages before migration planning started. The analysis was manual, slow, and inconsistent across practitioners.',
     facts: {
       Role: 'Creator',

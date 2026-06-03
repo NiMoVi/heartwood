@@ -79,7 +79,6 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="wrap footer-in">
-        <span className="coord">LAST TENDED — JUN 2026 · 25.7617°N 80.1918°W</span>
         <div className="socials">
           {SOCIAL.map(s => (
             <a key={s.label}

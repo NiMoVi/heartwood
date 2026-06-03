@@ -8,7 +8,7 @@ const PROJECTS = [
   // ── CONS-01: State Health Department ──────────────────────────────────────
   {
     id: 'state-health-demographics',
-    n: '01', year: '2024', kind: 'CONSULTING',
+    n: '01', year: '2022', kind: 'CONSULTING',
     title: 'Statewide Demographics Repository',
     blurb: 'Built the first unified demographic data repository for a state health agency — now addressing health inequities for 4M+ residents and being replicated across other state departments.',
     tags: ['Azure Synapse', 'SQL', 'Python', 'SSIS'],
@@ -16,7 +16,7 @@ const PROJECTS = [
     lede: 'A state health agency was trying to understand the demographics of 4M+ residents using siloed data scattered across 10+ departments — with no shared definitions, no linked records, and no reliable way to identify health inequities.',
     facts: {
       Role: 'Data Engineer / Tech Lead',
-      Year: '2024',
+      Year: '2022',
       Stack: 'SQL · SSMS · SSIS · Azure Synapse Analytics · Python/Spark',
       Status: 'Deployed',
       Client: 'State Health Agency',
@@ -32,7 +32,7 @@ const PROJECTS = [
   // ── CONS-02: State Lottery Cloud Migration ────────────────────────────────
   {
     id: 'state-lottery-cloud-migration',
-    n: '02', year: '2023', kind: 'CONSULTING',
+    n: '02', year: '2025', kind: 'CONSULTING',
     title: 'Lottery Analytics Cloud Migration',
     blurb: 'Migrated a state lottery\'s legacy database environment to Azure Synapse cloud significantly ahead of projected timelines, with minimal disruption to live reporting.',
     tags: ['Azure Synapse', 'SQL', 'Python', 'SSIS'],
@@ -40,7 +40,7 @@ const PROJECTS = [
     lede: 'A state lottery authority was running its analytics on aging on-premises databases. The cloud migration had a hard deadline, a complex web of dependent reports, and zero tolerance for reporting downtime — any broken dashboard would be immediately visible to business stakeholders.',
     facts: {
       Role: 'Data Engineer',
-      Year: '2023',
+      Year: '2025',
       Stack: 'SQL · SSMS · SSIS · Control-M · Azure Synapse Analytics · Python/Spark',
       Status: 'Deployed',
       Client: 'State Lottery Authority',
@@ -56,7 +56,7 @@ const PROJECTS = [
   // ── CONS-03: Federal Financial Management Power App ───────────────────────
   {
     id: 'federal-financial-power-app',
-    n: '03', year: '2023', kind: 'CONSULTING',
+    n: '03', year: '2025', kind: 'CONSULTING',
     title: 'Federal Financial Management Platform',
     blurb: 'Led a team to build a three-tool Power App covering budget, grants, and cash management for federal clients — designed from the start to be replicated across agencies.',
     tags: ['Power Apps', 'Power BI', 'Power Query'],
@@ -64,7 +64,7 @@ const PROJECTS = [
     lede: 'Federal clients working in financial management lacked integrated tooling to track budget resources, grants, and cash position in one place. Each function was managed through disconnected spreadsheets and manual processes — with no consistent interface or shared data definitions across the engagement.',
     facts: {
       Role: 'Technical Lead',
-      Year: '2023',
+      Year: '2025',
       Stack: 'Power BI · Power Query · Power Apps',
       Status: 'Deployed',
       Client: 'Federal Financial Agency',
@@ -80,7 +80,7 @@ const PROJECTS = [
   // ── CONS-04: USSGL Compliance Tool ────────────────────────────────────────
   {
     id: 'ussgl-compliance-tool',
-    n: '04', year: '2024', kind: 'CONSULTING',
+    n: '04', year: '2026', kind: 'CONSULTING',
     title: 'USSGL Automated Compliance Tool',
     blurb: 'Automated the manual USSGL ledger compliance process for federal accountants — validating against annually updated rules and generating actionable exception reports.',
     tags: ['Power Apps', 'VS Code', 'GitHub Copilot'],
@@ -88,7 +88,7 @@ const PROJECTS = [
     lede: 'Federal accountants were manually checking general ledgers against USSGL compliance rules — a process that consumed significant time each cycle and had to be repeated in full every year when the USSGL rules changed. There was no automation, no audit trail, and no consistent reporting format.',
     facts: {
       Role: 'Developer / Tech Lead',
-      Year: '2024',
+      Year: '2026',
       Stack: 'Power Apps · VS Code · GitHub Copilot · Claude Code',
       Status: 'Deployed',
       Client: 'Federal Accounting Agency',
@@ -104,7 +104,7 @@ const PROJECTS = [
   // ── PERS-01: SQL Modernization Tools ─────────────────────────────────────
   {
     id: 'sql-modernization-tools',
-    n: '05', year: '2024', kind: 'PERSONAL',
+    n: '05', year: '2026', kind: 'PERSONAL',
     title: 'SQL Modernization Tools',
     blurb: 'Built a PySide6 desktop application with two modular extractors — SQL Stored Procedure and SSIS Package — that parse legacy objects and output structured CSVs, substantially speeding cloud migration analysis.',
     tags: ['Python', 'PySide6', 'GitHub Copilot'],
@@ -112,7 +112,7 @@ const PROJECTS = [
     lede: 'Cloud migration projects consistently hit the same bottleneck: no one had a fast, reliable way to audit legacy SQL stored procedures and SSIS packages before migration planning started. The analysis was manual, slow, and inconsistent across practitioners.',
     facts: {
       Role: 'Creator',
-      Year: '2024',
+      Year: '2026',
       Stack: 'Python · PySide6 · VS Code · GitHub Copilot · Claude Code',
       Status: 'Active',
       Client: 'Personal',
@@ -128,7 +128,7 @@ const PROJECTS = [
   // ── PERS-02: Professional Networking Mobile App ───────────────────────────
   {
     id: 'professional-networking-app',
-    n: '06', year: '2025', kind: 'PERSONAL',
+    n: '06', year: '2026', kind: 'PERSONAL',
     title: 'AI-Powered Professional Networking App',
     blurb: 'Co-developing an AI-powered mobile app targeting the DMV-area professional events market — coming soon to Apple App Store and Google Play Store.',
     tags: ['React Native', 'Node.js', 'Claude API', 'PostgreSQL'],
@@ -136,7 +136,7 @@ const PROJECTS = [
     lede: 'Professional networking events generate moments of potential connection that rarely turn into lasting relationships — because the facilitation is purely social, with no intelligent structure to help attendees find the right people, remember conversations, or follow up effectively.',
     facts: {
       Role: 'Co-Developer',
-      Year: '2025',
+      Year: '2026',
       Stack: 'React Native · Expo · Node.js · Express · PostgreSQL · Claude API · pgvector · Docker · Railway',
       Status: 'Coming soon',
       Client: 'Personal',
@@ -168,7 +168,7 @@ const CERTS = [
 const SOCIAL = [
   { label: 'GitHub',   href: 'https://github.com/NiMoVi',                       icon: 'git-branch' },
   { label: 'LinkedIn', href: 'https://linkedin.com/in/nimovi',                   icon: 'linkedin'   },
-  { label: 'Email',    href: 'mailto:colonelnimo@gmail.com',                     icon: 'mail'       },
+  { label: 'Email',    href: 'mailto:nicolasmora02@outlook.com',                     icon: 'mail'       },
 ];
 
 Object.assign(window, { PROJECTS, NOTES, CERTS, SOCIAL });

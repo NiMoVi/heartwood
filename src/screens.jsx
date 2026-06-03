@@ -109,18 +109,26 @@ function FieldNotes() {
 }
 
 function Contact() {
-  const [sent, setSent] = useState(false);
   return (
     <section className="contact wrap">
-      <div className="rise d1" style={{ display: 'flex', justifyContent: 'center' }}><MonoLabel>Get in touch</MonoLabel></div>
-      <h2 className="rise d2">Let's plant <i>something</i>.</h2>
-      <p className="rise d3">I take on a few collaborations a year — hardware, ML, or anything that needs to feel alive. Tell me what you're growing.</p>
-      <div className="rise d4" style={{ maxWidth: 460, margin: '0 auto', display: 'flex', flexDirection: 'column', gap: 14 }}>
-        <input className="hw-input" placeholder="you@example.com" />
-        <textarea className="hw-input" placeholder="What are you building?" rows={3} style={{ resize: 'vertical' }}></textarea>
-        <Button variant="primary" onClick={() => setSent(true)}>
-          {sent ? 'Seed planted ✳' : 'Send →'}
-        </Button>
+      <div className="rise d1" style={{ display: 'flex', justifyContent: 'center' }}>
+        <MonoLabel>Get in touch</MonoLabel>
+      </div>
+      <h2 className="rise d2">Open to <i>conversation</i>.</h2>
+      <p className="rise d3">I'm a Senior Consultant at Deloitte based in Miami. If you're working on something in AI, data engineering, or analytics — or you just want to connect — I'd love to hear from you.</p>
+      <div className="contact-links rise d4">
+        {SOCIAL.map(s => (
+          <a key={s.label}
+             href={s.href}
+             className="contact-link"
+             target={s.href.startsWith('mailto') ? undefined : '_blank'}
+             rel={s.href.startsWith('mailto') ? undefined : 'noopener noreferrer'}>
+            {s.label === 'LinkedIn'
+              ? <LinkedInIcon size={20} />
+              : <Icon name={s.icon} size={20} />}
+            {s.label}
+          </a>
+        ))}
       </div>
     </section>
   );

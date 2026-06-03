@@ -43,7 +43,7 @@ Plans:
 **Depends on:** Phase 1
 **Requirements:** LAND-01, LAND-02, LAND-03, LAND-04, PROJ-01, PROJ-02, PROJ-03, PROJ-04, ABOUT-01, ABOUT-02, ABOUT-03, ABOUT-04, ABOUT-05, CONT-01, CONT-02, CONT-03
 **UI hint**: yes
-**Plans:** 5 plans
+**Plans:** 1/5 plans executed
 
 **Success Criteria:**
 1. The landing page hero displays Nico's name, his Deloitte title, and a 2-3 sentence positioning statement; the stats row shows real numbers (not placeholder "07 projects / 12 cities / 2.3k stars")
@@ -53,7 +53,7 @@ Plans:
 5. Both CTA buttons on the landing hero behave correctly: the primary scrolls to the projects grid and the secondary navigates to the contact section
 
 Plans:
-- [ ] 02-01-PLAN.md — Replace hero placeholder copy with real Deloitte title, positioning statement, and stats (Wave 1)
+- [x] 02-01-PLAN.md — Replace hero placeholder copy with real Deloitte title, positioning statement, and stats (Wave 1)
 - [ ] 02-02-PLAN.md — Rewrite PROJECTS array with 5 real entries: 3 anonymized Deloitte case studies + 2 personal tools (Wave 1)
 - [ ] 02-03-PLAN.md — Build About screen with bio narrative, trilingual callout, cert grid, resume download; wire nav (Wave 2)
 - [ ] 02-04-PLAN.md — Strip Contact form, replace with social link grid; update headline and body copy (Wave 2)

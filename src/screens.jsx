@@ -52,7 +52,18 @@ function ProjectDetail({ p, go, openProject }) {
       <h1 className="rise d2">{p.title}</h1>
       <p className="lede rise d2">{p.lede}</p>
       <div className="detail-hero rise d3">
-        <span className="ph-tag">◦ COVER — drop image</span>
+        {p.demo
+          ? <iframe
+              src={p.demo}
+              title={`${p.title} demo`}
+              width="100%"
+              height="600"
+              frameBorder="0"
+              sandbox="allow-scripts allow-same-origin"
+              style={{ display: 'block', border: 'none', borderRadius: 8 }}
+            />
+          : <span className="ph-tag">◦ COVER — drop image</span>
+        }
       </div>
       <div className="detail-cols">
         <dl className="facts rise d1">

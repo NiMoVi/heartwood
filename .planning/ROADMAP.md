@@ -60,8 +60,8 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 05-01-PLAN.md — Update hero stat counter (5→6) and push to main
-- [ ] 05-02-PLAN.md — Browser-verify all 6 cards, detail views, and next-project navigation
+- [x] 05-01-PLAN.md — Update hero stat counter (5→6) and push to main
+- [x] 05-02-PLAN.md — Browser-verify all 6 cards, detail views, and next-project navigation
 
 ---
 

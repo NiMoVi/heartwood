@@ -126,6 +126,53 @@ function Contact() {
   );
 }
 
+function About({ go }) {
+  return (
+    <React.Fragment>
+      <section className="section wrap">
+        <div className="sec-head">
+          <div>
+            <div className="rise d1"><MonoLabel>About</MonoLabel></div>
+            <h2 className="rise d2">The story so far.</h2>
+          </div>
+          <a href="assets/resume/Nicolas_Mora_Resume.pdf"
+             download="Nicolas_Mora_Resume.pdf"
+             className="btn btn-primary rise d2">
+            Download Resume <Icon name="download" size={17} />
+          </a>
+        </div>
+        <div className="about-bio rise d3">
+          <p>I'm a Senior Consultant in AI &amp; Analytics at Deloitte, where I've spent the last three years building the data systems that actually run large enterprises — not the slides that describe them. My work spans data pipeline architecture, agentic AI workflows, and BI platforms deployed across federal health, financial services, and retail clients.</p>
+          <p>Before Deloitte, I served as a Field Artillery officer in the U.S. Army Reserve from 2013 to 2019. That background — planning under uncertainty, leading technical teams, executing against hard deadlines — shapes how I approach engineering work. I studied International Business at Florida International University, graduating Cum Laude, and then moved into data engineering as AI started becoming a real part of enterprise infrastructure.</p>
+          <p>What makes my work distinct is that I build and I consult. I write Python and SQL every day. I've shipped production Synapse pipelines, designed agentic document review systems using Claude, and led BI modernization programs for organizations with millions of users. I'm not a generalist who knows a little about everything — I'm a data and AI specialist who understands the full stack from warehouse to dashboard to autonomous agent.</p>
+          <div className="about-langs">
+            <MonoLabel line={false}>Languages</MonoLabel>
+            <span className="chip">English</span>
+            <span className="chip">Spanish</span>
+            <span className="chip">Portuguese</span>
+          </div>
+        </div>
+      </section>
+      <section className="section wrap">
+        <div className="sec-head">
+          <div>
+            <div className="rise d1"><MonoLabel>Certifications</MonoLabel></div>
+            <h2 className="rise d2">Credentials</h2>
+          </div>
+        </div>
+        <div className="cert-grid rise d3">
+          {CERTS.map(c => (
+            <div key={c.name} className="cert-card">
+              <span className="cert-name">{c.name}</span>
+              <span className="cert-meta">{c.issuer} · {c.year}</span>
+            </div>
+          ))}
+        </div>
+      </section>
+    </React.Fragment>
+  );
+}
+
 function App() {
   const [view, setView] = useState('home');
   const [project, setProject] = useState(null);
@@ -154,6 +201,7 @@ function App() {
       {view === 'project' && project && <ProjectDetail p={project} go={go} openProject={openProject} />}
       {view === 'notes' && <FieldNotes />}
       {view === 'contact' && <Contact />}
+      {view === 'about'   && <About go={go} />}
       <Footer />
     </div>
   );

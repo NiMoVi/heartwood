@@ -22,7 +22,7 @@ function Button({ variant = 'primary', children, onClick }) {
 
 /* ---- header ---- */
 function Header({ view, go, theme, toggleTheme }) {
-  const links = [['home', 'Work'], ['notes', 'Field notes'], ['contact', 'Contact']];
+  const links = [['home', 'Work'], ['about', 'About'], ['contact', 'Contact']];
   return (
     <header className="hdr">
       <div className="wrap hdr-in">

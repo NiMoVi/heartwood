@@ -2,38 +2,38 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: Ready to plan
-last_updated: "2026-06-03T01:44:42.474Z"
+status: Executing Phase 03 — checkpoint at 03-01 Task 2
+last_updated: "2026-06-03T10:07:00Z"
 progress:
   total_phases: 3
   completed_phases: 2
-  total_plans: 9
+  total_plans: 12
   completed_plans: 9
 ---
 
 # Project State
 
 **Project:** Nico Mora Portfolio
-**Last updated:** 2026-06-02
+**Last updated:** 2026-06-03
 
 ## Current Phase
 
-Phase 1: Foundation — Not started
+Phase 3: Polish & Deploy — In progress (checkpoint at 03-01 Task 2)
 
 ## Project Reference
 
 See: .planning/PROJECT.md (updated 2026-06-02)
 
 **Core value:** A recruiter or collaborator immediately understands Nico is a technically deep AI/Data professional who ships real things.
-**Current focus:** Phase 02 — content-pages
+**Current focus:** Phase 03 — polish-deploy (03-01 checkpoint: human must push + activate GitHub Pages)
 
 ## Progress
 
 | Phase | Plans Complete | Status |
 |-------|----------------|--------|
-| 1. Foundation | 0/4 | Not started |
-| 2. Content & Pages | 0/5 | Not started |
-| 3. Polish & Deploy | 0/3 | Not started |
+| 1. Foundation | 4/4 | Complete |
+| 2. Content & Pages | 5/5 | Complete |
+| 3. Polish & Deploy | 0/3 | In progress — 03-01 Task 1 done, Task 2 awaiting human |
 
 ## Completed Phases
 
@@ -60,10 +60,11 @@ See: .planning/PROJECT.md (updated 2026-06-02)
 - [Phase 02-content-pages]: GSD workflow included as portfolio-agent personal project — demonstrates AI tooling depth with meta-narrative
 - [Phase 02-content-pages]: Resume download uses direct <a> with btn classes, not Button wrapper, to avoid invalid HTML nesting
 - [Phase 02-content-pages]: Field Notes nav link removed (not deferred/hidden) — v2 scope confirmed; About takes its slot
+- [Phase 03-polish-deploy]: Live URL is https://nimovi.github.io/heartwood-NicoMora/ (repo name is heartwood-NicoMora, not heartwood); optional rename to "heartwood" deferred to user decision; Plan 03-03 OG tags must use confirmed URL
 
 ### Key Blockers
 
-- Resume PDF: `.docx` exists at repo root; PDF conversion required before ABOUT-05 (resume download) can be completed in Phase 2
+- 03-01 Task 2: Human must push to origin/main and enable GitHub Pages via browser UI (Settings -> Pages -> main branch / root) before Phase 3 progress can continue
 
 ### Open Questions
 

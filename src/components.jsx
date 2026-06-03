@@ -79,6 +79,7 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="wrap footer-in">
+        <span className="coord">LAST TENDED — JUN 2026</span>
         <div className="socials">
           {SOCIAL.map(s => (
             <a key={s.label}

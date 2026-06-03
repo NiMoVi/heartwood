@@ -134,7 +134,7 @@ const CERTS = [
 
 const SOCIAL = [
   { label: 'GitHub',   href: 'https://github.com/NiMoVi',                       icon: 'git-branch' },
-  { label: 'LinkedIn', href: 'https://linkedin.com/in/nicolas-mora',             icon: 'linkedin'   },
+  { label: 'LinkedIn', href: 'https://linkedin.com/in/nimovi',                   icon: 'linkedin'   },
   { label: 'Email',    href: 'mailto:colonelnimo@gmail.com',                     icon: 'mail'       },
 ];
 

@@ -61,4 +61,4 @@ See: .planning/PROJECT.md (updated 2026-06-03)
 | 260603-m62 | embed Burrow demo as iframe in professional-networking-app detail | 2026-06-03 | c4bf5c9 | [260603-m62-embed-burrow-demo-as-iframe-in-professio](./quick/260603-m62-embed-burrow-demo-as-iframe-in-professio/) |
 | 260603-mcx | create README.md for the heartwood portfolio repo | 2026-06-03 | 4331cf6 | [260603-mcx-create-readme-md-for-the-heartwood-portf](./quick/260603-mcx-create-readme-md-for-the-heartwood-portf/) |
 | 260603-mwi | Add demo modal button and cover image to professional-networking-app detail page | 2026-06-03 | f8b4d6c | [260603-mwi-add-demo-modal-button-and-cover-image-to](./quick/260603-mwi-add-demo-modal-button-and-cover-image-to/) |
-| 260603-o6y | flip project order to show newest projects first | 2026-06-03 | {commit} | [260603-o6y-flip-project-order-to-show-newest-projec](./quick/260603-o6y-flip-project-order-to-show-newest-projec/) |
+| 260603-o6y | flip project order to show newest projects first | 2026-06-03 | 1a89ec9 | [260603-o6y-flip-project-order-to-show-newest-projec](./quick/260603-o6y-flip-project-order-to-show-newest-projec/) |

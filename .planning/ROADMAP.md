@@ -57,7 +57,11 @@ Plans:
   2. The Projects page displays all 6 cards, each with an accurate title, outcome-first blurb, year, tech tags, and correct CONSULTING or PERSONAL kind badge
   3. Each of the 6 project detail views opens without errors and all fields (lede, body paragraphs, pull quote, facts sidebar) are fully populated — no undefined text visible
   4. Clicking "Next project" from entry 6 wraps correctly to entry 1, and the full sequence 1→2→3→4→5→6→1 navigates without errors
-**Plans**: TBD
+**Plans**: 2 plans
+
+Plans:
+- [ ] 05-01-PLAN.md — Update hero stat counter (5→6) and push to main
+- [ ] 05-02-PLAN.md — Browser-verify all 6 cards, detail views, and next-project navigation
 
 ---
 
@@ -68,9 +72,9 @@ Plans:
 | 1. Foundation | v1.0 | 4/4 | Complete | 2026-06-03 |
 | 2. Content & Pages | v1.0 | 5/5 | Complete | 2026-06-03 |
 | 3. Polish & Deploy | v1.0 | 3/3 | Complete | 2026-06-03 |
-| 4. Project Content Authoring | v1.1 | 0/1 | Complete    | 2026-06-03 |
-| 5. Implementation & Validation | v1.1 | 0/TBD | Not started | - |
+| 4. Project Content Authoring | v1.1 | 1/1 | Complete | 2026-06-03 |
+| 5. Implementation & Validation | v1.1 | 0/2 | Not started | - |
 
 ---
 
-*Last updated: 2026-06-03 — Phase 4 planned (1 plan)*
+*Last updated: 2026-06-03 — Phase 5 planned (2 plans)*

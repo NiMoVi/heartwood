@@ -3,8 +3,8 @@ gsd_state_version: 1.0
 milestone: v1.1
 milestone_name: Real Projects Content Refresh
 status: planning
-last_updated: "2026-06-03T19:15:34.092Z"
-last_activity: 2026-06-03 - Completed quick task 260603-lr0: commit text updates and remove coordinates from footer
+last_updated: "2026-06-03T00:00:00Z"
+last_activity: 2026-06-03 - Completed quick task 260603-m62: embed Burrow demo as iframe in professional-networking-app detail
 progress:
   total_phases: 2
   completed_phases: 2
@@ -58,3 +58,4 @@ See: .planning/PROJECT.md (updated 2026-06-03)
 | # | Description | Date | Commit | Directory |
 |---|-------------|------|--------|-----------|
 | 260603-lr0 | commit text updates and remove coordinates from footer | 2026-06-03 | 3b2bf58 | [260603-lr0-commit-text-updates-and-remove-coordinat](./quick/260603-lr0-commit-text-updates-and-remove-coordinat/) |
+| 260603-m62 | embed Burrow demo as iframe in professional-networking-app detail | 2026-06-03 | c4bf5c9 | [260603-m62-embed-burrow-demo-as-iframe-in-professio](./quick/260603-m62-embed-burrow-demo-as-iframe-in-professio/) |

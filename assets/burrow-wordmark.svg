@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="320" height="80">
+  
+
+  
+  <g transform="translate(2 4)">
+    <defs>
+      <clipPath id="wmCircleClip">
+        <circle cx="36" cy="36" r="36"></circle>
+      </clipPath>
+    </defs>
+    <circle cx="36" cy="36" r="36" fill="#FAF3E7"></circle>
+    <circle cx="36" cy="36" r="36" fill="none" stroke="#6B4423" stroke-width="1.5" opacity="0.12"></circle>
+
+    <g clip-path="url(#wmCircleClip)">
+      <g transform="scale(0.75) translate(12 8)">
+        
+        <ellipse fill="#6B4423" cx="28" cy="20" rx="5" ry="3.5" transform="rotate(-30 28 20)"></ellipse>
+        <ellipse fill="#6B4423" cx="68" cy="20" rx="5" ry="3.5" transform="rotate(30 68 20)"></ellipse>
+        
+        <ellipse fill="#B8865A" cx="48" cy="32" rx="22" ry="21"></ellipse>
+        <ellipse fill="#D4A878" cx="48" cy="38" rx="16" ry="14"></ellipse>
+        <ellipse fill="#6B4423" cx="40" cy="28" rx="7" ry="5" transform="rotate(-12 40 28)"></ellipse>
+        <ellipse fill="#6B4423" cx="56" cy="28" rx="7" ry="5" transform="rotate(12 56 28)"></ellipse>
+        <circle fill="#1A0F08" cx="40" cy="29" r="2.6"></circle>
+        <circle fill="#1A0F08" cx="56" cy="29" r="2.6"></circle>
+        <circle fill="#FFFFFF" cx="40.9" cy="28" r="0.9"></circle>
+        <circle fill="#FFFFFF" cx="56.9" cy="28" r="0.9"></circle>
+        <ellipse fill="#D4A878" cx="48" cy="44" rx="7" ry="5.5"></ellipse>
+        <ellipse fill="#2A1F12" cx="48" cy="42" rx="2.2" ry="1.8"></ellipse>
+        <path d="M48 44.5 L48 47 M48 47 Q45 49 43 48 M48 47 Q51 49 53 48" stroke="#2A1F12" stroke-width="1" fill="none" stroke-linecap="round"></path>
+
+        
+        <path d="M40 56 Q40 48 48 48 Q56 48 56 56" stroke="#3D2814" stroke-width="2.5" fill="none" stroke-linecap="round"></path>
+        <rect x="14" y="56" width="68" height="48" rx="4" fill="#6B4423"></rect>
+        <rect x="14" y="56" width="68" height="5" fill="#3D2814"></rect>
+        <rect x="44" y="62" width="8" height="4" rx="0.8" fill="#D4A878"></rect>
+        <circle fill="#3D2814" cx="19" cy="64" r="1.2"></circle>
+        <circle fill="#3D2814" cx="77" cy="64" r="1.2"></circle>
+        <path d="M14 62 L82 62" stroke="#3D2814" stroke-width="0.6" opacity="0.5"></path>
+
+        
+        <ellipse fill="#D4A878" cx="26" cy="55" rx="7" ry="5"></ellipse>
+        <path d="M22 57 L21 60 M25 58 L24 61 M28 58 L27 61 M31 57 L31 60" stroke="#6B4423" stroke-width="1" stroke-linecap="round" opacity="0.55"></path>
+        <ellipse fill="#D4A878" cx="70" cy="55" rx="7" ry="5"></ellipse>
+        <path d="M66 57 L65 60 M69 58 L68 61 M72 58 L71 61 M75 57 L75 60" stroke="#6B4423" stroke-width="1" stroke-linecap="round" opacity="0.55"></path>
+      </g>
+    </g>
+  </g>
+
+  
+  <text x="84" y="52" fill="#2A1F12" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-weight="800" font-size="38" letter-spacing="-1.2">Burrow</text>
+</svg>

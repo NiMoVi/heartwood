@@ -288,3 +288,32 @@ button { font-family: inherit; cursor: pointer; }
   .note-row { grid-template-columns: 80px 1fr auto; gap: 12px; }
   /* Narrower date column so content column has more room at 335px */
 }
+
+/* ---------- detail hero cover ---------- */
+.detail-hero-cover {
+  position: absolute; inset: 0; z-index: 1;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  gap: 24px; padding: 24px;
+}
+.detail-cover-img {
+  max-width: 360px; width: 100%; height: auto;
+  display: block; object-fit: contain;
+}
+
+/* ---------- demo modal ---------- */
+.demo-modal {
+  position: fixed; inset: 0; z-index: 1000;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex; align-items: center; justify-content: center;
+}
+.demo-modal-inner {
+  position: relative;
+  width: 430px; height: 90vh; max-height: 900px;
+  background: #000; border-radius: 16px; overflow: hidden;
+}
+.demo-modal-close {
+  position: absolute; top: 10px; right: 12px; z-index: 10;
+  background: transparent; border: none;
+  color: #fff; font-size: 20px; cursor: pointer; line-height: 1;
+}

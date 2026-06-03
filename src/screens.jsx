@@ -44,6 +44,7 @@ function Home({ go, openProject }) {
 }
 
 function ProjectDetail({ p, go, openProject }) {
+  const [demoOpen, setDemoOpen] = useState(false);
   const next = PROJECTS[(PROJECTS.indexOf(p) + 1) % PROJECTS.length];
   return (
     <article className="detail wrap">
@@ -52,17 +53,26 @@ function ProjectDetail({ p, go, openProject }) {
       <h1 className="rise d2">{p.title}</h1>
       <p className="lede rise d2">{p.lede}</p>
       <div className="detail-hero rise d3">
-        {p.demo
-          ? <iframe
-              src={p.demo}
-              title={`${p.title} demo`}
-              width="100%"
-              height="900"
-              frameBorder="0"
-              sandbox="allow-scripts allow-same-origin"
-              style={{ display: 'block', border: 'none', borderRadius: 8 }}
-            />
-          : <span className="ph-tag">◦ COVER — drop image</span>
+        {p.cover
+          ? (
+            <div className="detail-hero-cover">
+              <img src={p.cover} alt={p.title} className="detail-cover-img" />
+              {p.demo && (
+                <Button variant="primary" onClick={() => setDemoOpen(true)}>
+                  View Demo
+                </Button>
+              )}
+            </div>
+          )
+          : p.demo
+            ? (
+              <div className="detail-hero-cover">
+                <Button variant="primary" onClick={() => setDemoOpen(true)}>
+                  View Demo
+                </Button>
+              </div>
+            )
+            : <span className="ph-tag">◦ COVER — drop image</span>
         }
       </div>
       <div className="detail-cols">
@@ -90,6 +100,22 @@ function ProjectDetail({ p, go, openProject }) {
           </article>
         </div>
       </div>
+      {demoOpen && (
+        <div className="demo-modal" onClick={() => setDemoOpen(false)}>
+          <div className="demo-modal-inner" onClick={e => e.stopPropagation()}>
+            <button className="demo-modal-close" onClick={() => setDemoOpen(false)}>✕</button>
+            <iframe
+              src={p.demo}
+              title={`${p.title} demo`}
+              width="100%"
+              height="100%"
+              frameBorder="0"
+              sandbox="allow-scripts allow-same-origin"
+              style={{ display: 'block', border: 'none' }}
+            />
+          </div>
+        </div>
+      )}
     </article>
   );
 }

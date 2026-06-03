@@ -52,7 +52,7 @@ function ProjectDetail({ p, go, openProject }) {
       <div className="rise d1"><MonoLabel>{p.n} / {p.year} · {p.kind}</MonoLabel></div>
       <h1 className="rise d2">{p.title}</h1>
       <p className="lede rise d2">{p.lede}</p>
-      <div className="detail-hero rise d3">
+      <div className={`detail-hero rise d3${p.heroAccent ? ' amber' : ''}`}>
         {p.cover
           ? (
             <div className="detail-hero-cover">

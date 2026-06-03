@@ -162,6 +162,8 @@ button { font-family: inherit; cursor: pointer; }
   position: relative; overflow: hidden; box-shadow: var(--shadow-lg); }
 .detail-hero::after { content: ""; position: absolute; inset: 0;
   background: repeating-radial-gradient(circle at 70% 120%, transparent 0 34px, rgba(139,224,106,0.06) 34px 35px); }
+.detail-hero.amber { background: radial-gradient(120% 100% at 60% 0%, rgba(230,169,78,0.18), transparent 60%), linear-gradient(165deg, #2A2317, #0E1812); }
+.detail-hero.amber::after { background: repeating-radial-gradient(circle at 70% 120%, transparent 0 34px, rgba(230,169,78,0.06) 34px 35px); }
 .detail-cols { display: grid; grid-template-columns: 220px 1fr; gap: 48px; }
 .facts dt { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--fg-muted); margin-top: 18px; }
 .facts dt:first-child { margin-top: 0; }

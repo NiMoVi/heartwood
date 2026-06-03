@@ -134,6 +134,7 @@ const PROJECTS = [
     blurb: 'Co-developing an AI-powered mobile app targeting the DMV-area professional events market — coming soon to Apple App Store and Google Play Store.',
     tags: ['React Native', 'Node.js', 'Claude API', 'PostgreSQL'],
     accent: false,
+    heroAccent: true,
     demo: 'assets/demos/burrow-app.html',
     cover: 'assets/burrow-wordmark.svg',
     lede: 'Professional networking events generate moments of potential connection that rarely turn into lasting relationships — because the facilitation is purely social, with no intelligent structure to help attendees find the right people, remember conversations, or follow up effectively.',

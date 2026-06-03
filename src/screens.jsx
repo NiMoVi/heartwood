@@ -14,7 +14,7 @@ function Home({ go, openProject }) {
               <Button variant="ghost" onClick={() => go('contact')}>Get in touch</Button>
             </div>
             <div className="hero-stats rise d5">
-              <div className="stat"><div className="n">5</div><div className="l">Projects</div></div>
+              <div className="stat"><div className="n">6</div><div className="l">Projects</div></div>
               <div className="stat"><div className="n">5</div><div className="l">Certifications</div></div>
               <div className="stat"><div className="n">3</div><div className="l">Languages</div></div>
             </div>

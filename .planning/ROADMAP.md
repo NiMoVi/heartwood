@@ -74,11 +74,11 @@ Plans:
 2. On a 375px-wide viewport (iPhone SE), every page section is readable and usable — no horizontal scroll, no overlapping text, no clipped buttons
 3. Pasting the portfolio URL into LinkedIn's post composer or Slack generates a preview card showing the OG image, site title, and description
 
-**Plans:** 3 plans
+**Plans:** 1/3 plans executed
 
 Plans:
 - [ ] 03-01-PLAN.md — Enable GitHub Pages: create .nojekyll, activate via Settings UI, confirm live URL (Wave 1)
-- [ ] 03-02-PLAN.md — Add @media (max-width: 480px) to kit.css; visual QA at 375px/360px/430px (Wave 2)
+- [x] 03-02-PLAN.md — Add @media (max-width: 480px) to kit.css; visual QA at 375px/360px/430px (Wave 2)
 - [ ] 03-03-PLAN.md — Create assets/og-card.png (1200x630) and add OG/Twitter meta tags to index.html (Wave 2)
 
 ---

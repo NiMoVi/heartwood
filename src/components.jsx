@@ -48,7 +48,7 @@ function Header({ view, go, theme, toggleTheme }) {
 function WorkCard({ p, onClick, delay }) {
   return (
     <article className={`work-card rise ${delay}`} onClick={onClick}>
-      <div className={`wc-thumb ${p.accent ? 'amber' : ''}`}></div>
+      <div className={`wc-thumb ${p.accent || p.heroAccent ? 'amber' : ''}`}></div>
       <div className="wc-body">
         <div className="wc-top">
           <span className="wc-meta">{p.n} / {p.year} · {p.kind}</span>

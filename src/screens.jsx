@@ -6,17 +6,17 @@ function Home({ go, openProject }) {
       <section className="hero wrap">
         <div className="hero-grid">
           <div>
-            <div className="rise d1"><MonoLabel>Creative technologist · est. 2019</MonoLabel></div>
-            <h1 className="rise d2">I grow software in the <i>understory</i> — quiet tools that take root and last.</h1>
-            <p className="lede rise d3">Hardware, machine learning, and the occasional light sculpture. I build things that notice their surroundings and age well.</p>
+            <div className="rise d1"><MonoLabel>Senior Consultant · AI & Analytics · Deloitte</MonoLabel></div>
+            <h1 className="rise d2">I build data systems that <i>make decisions</i> — not just dashboards.</h1>
+            <p className="lede rise d3">AI engineer and data architect with experience across federal health, retail, and financial services. I work at the intersection of cloud infrastructure, agentic AI, and analytics — shipping production systems, not prototypes.</p>
             <div className="hero-cta rise d4">
-              <Button variant="primary" onClick={() => { const el = document.getElementById('work'); if (el) window.scrollTo({ top: el.offsetTop - 40, behavior: 'smooth' }); }}>Walk the grove <Icon name="arrow-down" size={17} /></Button>
-              <Button variant="ghost" onClick={() => go('contact')}>Let's plant something</Button>
+              <Button variant="primary" onClick={() => { const el = document.getElementById('work'); if (el) window.scrollTo({ top: el.offsetTop - 40, behavior: 'smooth' }); }}>View my work <Icon name="arrow-down" size={17} /></Button>
+              <Button variant="ghost" onClick={() => go('contact')}>Get in touch</Button>
             </div>
             <div className="hero-stats rise d5">
-              <div className="stat"><div className="n">07</div><div className="l">Projects</div></div>
-              <div className="stat"><div className="n">2.3k</div><div className="l">GitHub stars</div></div>
-              <div className="stat"><div className="n">12</div><div className="l">Cities listening</div></div>
+              <div className="stat"><div className="n">4</div><div className="l">Projects</div></div>
+              <div className="stat"><div className="n">5</div><div className="l">Certifications</div></div>
+              <div className="stat"><div className="n">3</div><div className="l">Languages</div></div>
             </div>
           </div>
           <div className="portrait rise d3">
@@ -29,9 +29,9 @@ function Home({ go, openProject }) {
         <div className="sec-head">
           <div>
             <MonoLabel>Selected work</MonoLabel>
-            <h2>Things I've grown</h2>
+            <h2>Selected work</h2>
           </div>
-          <a className="link" onClick={() => go('notes')}>Read the field notes <Icon name="arrow-right" size={15} /></a>
+          <a className="link" onClick={() => go('about')}>About Nico <Icon name="arrow-right" size={15} /></a>
         </div>
         <div className="work-grid">
           {PROJECTS.map((p, i) => (

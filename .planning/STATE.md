@@ -2,13 +2,13 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: Executing Phase 02
-last_updated: "2026-06-03T01:28:04.255Z"
+status: Ready to plan
+last_updated: "2026-06-03T01:44:42.474Z"
 progress:
   total_phases: 3
-  completed_phases: 1
+  completed_phases: 2
   total_plans: 9
-  completed_plans: 5
+  completed_plans: 9
 ---
 
 # Project State
@@ -56,6 +56,10 @@ See: .planning/PROJECT.md (updated 2026-06-02)
 - [Phase 01-foundation]: LinkedIn URL slug is a placeholder (https://linkedin.com/in/nicolas-mora) — confirm exact slug in Phase 2
 - [Phase 02-content-pages]: Stats row uses 4 Projects / 5 Certifications / 3 Languages — verifiable from PROJECTS and CERTS arrays and resume
 - [Phase 02-content-pages]: Field Notes nav link replaced with About link in Selected work section; go('notes') changed to go('about') since Field Notes is v2 scope
+- [Phase 02-content-pages]: Consulting client names anonymized: Federal Health Agency, Regional Financial Institution, Fortune 500 Retailer
+- [Phase 02-content-pages]: GSD workflow included as portfolio-agent personal project — demonstrates AI tooling depth with meta-narrative
+- [Phase 02-content-pages]: Resume download uses direct <a> with btn classes, not Button wrapper, to avoid invalid HTML nesting
+- [Phase 02-content-pages]: Field Notes nav link removed (not deferred/hidden) — v2 scope confirmed; About takes its slot
 
 ### Key Blockers
 

@@ -91,7 +91,7 @@ button { font-family: inherit; cursor: pointer; }
 .btn-ghost:hover { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); }
 
 /* ---------- hero ---------- */
-.hero { padding: 96px 0 80px; }
+.hero { padding-block: 96px 80px; }
 .hero-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 56px; align-items: center; }
 .hero h1 {
   font-family: var(--font-display); font-weight: 400; font-size: clamp(44px, 6vw, 76px);
@@ -121,7 +121,7 @@ button { font-family: inherit; cursor: pointer; }
 .stat .l { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.14em; color: var(--fg-muted); text-transform: uppercase; }
 
 /* ---------- section header ---------- */
-.section { padding: 72px 0; }
+.section { padding-block: 72px; }
 .sec-head { display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 40px; }
 .sec-head h2 { font-family: var(--font-display); font-weight: 400; font-size: 39px; letter-spacing: -0.02em; margin: 14px 0 0; }
 .sec-head .link { font-size: 14px; color: var(--accent); display: inline-flex; gap: 6px; align-items: center; cursor: pointer; }
@@ -151,7 +151,7 @@ button { font-family: inherit; cursor: pointer; }
   border: 1px solid var(--border-strong); color: var(--fg-muted); }
 
 /* ---------- project detail ---------- */
-.detail { padding: 60px 0 40px; }
+.detail { padding-block: 60px 40px; }
 .back { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.1em; color: var(--fg-muted);
   display: inline-flex; gap: 8px; align-items: center; margin-bottom: 36px; transition: color var(--dur-fast); cursor: pointer; }
 .back:hover { color: var(--accent); }
@@ -213,7 +213,7 @@ button { font-family: inherit; cursor: pointer; }
 }
 
 /* ---------- contact / footer ---------- */
-.contact { padding: 96px 0; text-align: center; }
+.contact { padding-block: 96px; text-align: center; }
 .contact h2 { font-family: var(--font-display); font-weight: 400; font-size: clamp(38px, 5.5vw, 64px); letter-spacing: -0.025em; margin: 18px 0 0; }
 .contact h2 i { font-style: italic; color: var(--accent); }
 .contact p { font-size: 18px; color: var(--fg-2); margin: 22px auto 34px; max-width: 44ch; }
@@ -269,7 +269,7 @@ button { font-family: inherit; cursor: pointer; }
   .wrap { padding: 0 20px; }
   /* Reduces side gutter: 375px - 40px = 335px content width */
 
-  .hero { padding: 56px 0 48px; }
+  .hero { padding-block: 56px 48px; }
   /* Reduces excessive top/bottom padding on short phone screens */
 
   .hero-cta { flex-wrap: wrap; }

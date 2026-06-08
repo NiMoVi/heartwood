@@ -4,7 +4,7 @@ milestone: v1.1
 milestone_name: Real Projects Content Refresh
 status: planning
 last_updated: "2026-06-03T00:00:00Z"
-last_activity: 2026-06-03 - Completed quick task 260603-o6y: flip project order to show newest projects first
+last_activity: 2026-06-08 - Completed quick task 260607-sfe: Add dynamic side padding for mobile/small screens
 progress:
   total_phases: 2
   completed_phases: 2
@@ -62,3 +62,4 @@ See: .planning/PROJECT.md (updated 2026-06-03)
 | 260603-mcx | create README.md for the heartwood portfolio repo | 2026-06-03 | 4331cf6 | [260603-mcx-create-readme-md-for-the-heartwood-portf](./quick/260603-mcx-create-readme-md-for-the-heartwood-portf/) |
 | 260603-mwi | Add demo modal button and cover image to professional-networking-app detail page | 2026-06-03 | f8b4d6c | [260603-mwi-add-demo-modal-button-and-cover-image-to](./quick/260603-mwi-add-demo-modal-button-and-cover-image-to/) |
 | 260603-o6y | flip project order to show newest projects first | 2026-06-03 | 1a89ec9 | [260603-o6y-flip-project-order-to-show-newest-projec](./quick/260603-o6y-flip-project-order-to-show-newest-projec/) |
+| 260607-sfe | Add dynamic side padding for mobile/small screens | 2026-06-08 | — | [260607-sfe-add-dynamic-side-padding-for-mobile-smal](./quick/260607-sfe-add-dynamic-side-padding-for-mobile-smal/) |

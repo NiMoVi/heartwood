@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;1,400&family=Hanken+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 1200px;
+    height: 630px;
+    overflow: hidden;
+    background: #0E1812;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .card {
+    width: 1200px;
+    height: 630px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 60px 72px;
+    overflow: hidden;
+  }
+
+  /* Radial glow + topo texture */
+  .card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(110% 120% at 90% -5%, rgba(139,224,106,0.10), transparent 55%),
+      repeating-radial-gradient(circle at 85% 15%, transparent 0 70px, rgba(139,224,106,0.022) 70px 71px);
+    pointer-events: none;
+  }
+
+  /* Left accent bar */
+  .accent-bar {
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 4px;
+    background: linear-gradient(to bottom, #8BE06A 0%, rgba(139,224,106,0.2) 100%);
+  }
+
+  /* Top row — mark + url */
+  .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .mark { width: 36px; height: 36px; }
+
+  .brand-name {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    color: #F4F1E7;
+    letter-spacing: -0.01em;
+  }
+
+  .brand-name em {
+    font-style: italic;
+    font-family: 'Spectral', serif;
+    font-weight: 400;
+    color: #8BE06A;
+  }
+
+  .site-url {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    color: #5C7163;
+  }
+
+  /* Main content */
+  .main {
+    position: relative;
+    z-index: 1;
+    padding-bottom: 8px;
+  }
+
+  .eyebrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #8BE06A;
+    margin-bottom: 22px;
+  }
+
+  .name {
+    font-family: 'Spectral', Georgia, serif;
+    font-weight: 300;
+    font-size: 84px;
+    line-height: 1.0;
+    letter-spacing: -0.03em;
+    color: #F4F1E7;
+    margin-bottom: 28px;
+  }
+
+  .name em {
+    font-style: italic;
+    color: #8BE06A;
+  }
+
+  .descriptor {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 1.55;
+    color: #A6B8AB;
+    max-width: 640px;
+  }
+
+  /* Bottom row — tags */
+  .bottom {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #5C7163;
+    border: 1px solid #2B3830;
+    border-radius: 4px;
+    padding: 5px 11px;
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="accent-bar"></div>
+
+  <div class="top">
+    <div class="brand">
+      <img class="mark" src="mark.svg" alt="" />
+      <span class="brand-name">Nico <em>Mora</em></span>
+    </div>
+    <span class="site-url">nimovi.github.io/heartwood</span>
+  </div>
+
+  <div class="main">
+    <div class="eyebrow">Senior Consultant · AI &amp; Analytics · Deloitte</div>
+    <div class="name">Nico <em>Mora</em></div>
+    <div class="descriptor">Senior Consultant in AI &amp; Analytics at Deloitte. Five years building production data systems for federal and state government across defense, finance, health, and lottery.</div>
+  </div>
+
+  <div class="bottom">
+    <span class="tag">Data Engineering</span>
+    <span class="tag">Agentic AI</span>
+    <span class="tag">Cloud Infrastructure</span>
+    <span class="tag">Analytics</span>
+  </div>
+</div>
+</body>
+</html>

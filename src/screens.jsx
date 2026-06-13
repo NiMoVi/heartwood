@@ -120,31 +120,6 @@ function ProjectDetail({ p, go, openProject }) {
   );
 }
 
-function FieldNotes() {
-  return (
-    <section className="section wrap">
-      <div className="sec-head">
-        <div>
-          <MonoLabel>02 / Field notes</MonoLabel>
-          <h2>Writing &amp; observations</h2>
-        </div>
-      </div>
-      <div className="notes-list">
-        {NOTES.map((n, i) => (
-          <div key={i} className="note-row rise" style={{ animationDelay: `${0.05 + i * 0.07}s` }}>
-            <span className="note-date">{n.date}</span>
-            <div>
-              <h3>{n.title}</h3>
-              <p>{n.excerpt}</p>
-            </div>
-            <span className="note-arr"><Icon name="arrow-right" size={18} /></span>
-          </div>
-        ))}
-      </div>
-    </section>
-  );
-}
-
 function Contact() {
   return (
     <section className="contact wrap">
@@ -244,8 +219,7 @@ function App() {
       <Header view={view} go={go} theme={theme} toggleTheme={() => setTheme(t => t === 'dark' ? 'light' : 'dark')} />
       {view === 'home' && <Home go={go} openProject={openProject} />}
       {view === 'project' && project && <ProjectDetail p={project} go={go} openProject={openProject} />}
-      {view === 'notes' && <FieldNotes />}
-      {view === 'contact' && <Contact />}
+{view === 'contact' && <Contact />}
       {view === 'about'   && <About go={go} />}
       <Footer />
     </div>

@@ -1,5 +1,5 @@
 // src/data.js
-// Portfolio content data. Edit this file to update projects, notes, certs, and social links.
+// Portfolio content data. Edit this file to update projects, certs, and social links.
 // IMPORTANT: This is NOT an ES module. Do not use import/export.
 // All arrays are exposed via window so components.jsx and screens.jsx can access them.
 // Loaded as type="text/babel" BEFORE components.jsx in index.html.
@@ -25,7 +25,7 @@ const PROJECTS = [
       Client: 'Personal',
     },
     body: [
-      'I co-built a mobile app that helps attendees at professional events find the right people. Before an event, the app surfaces relevant connections based on professional profiles. During it, you get context on who you\'re talking to. After, it structures follow-up so the conversations that mattered actually continue. The product is built for the DMV-area professional events market and is coming to the Apple App Store and Google Play Store.',
+      'I built a mobile app that helps attendees at professional events find the right people. Before an event, the app surfaces relevant connections based on professional profiles. During it, you get context on who you\'re talking to. After, it structures follow-up so the conversations that mattered actually continue. The product is built for the DMV-area professional events market and is coming to the Apple App Store and Google Play Store.',
       'The stack is React Native with Expo for cross-platform mobile, a Node.js/Express API, PostgreSQL with pgvector for semantic profile matching, and the Anthropic Claude API for the facilitation layer. Infrastructure runs on Docker and deploys via Railway. I used Claude Code and GitHub Copilot throughout the build as development accelerants.',
       'Building this end-to-end has meant owning everything: mobile UI, API design, database schema, AI integration, and deployment. That was a deliberate choice. The consulting work gives me depth in one layer at a time. This gave me the full picture.',
     ],
@@ -155,13 +155,6 @@ const PROJECTS = [
 
 ];
 
-const NOTES = [
-  { date: 'MAY 2026', title: 'On building things that outlive their hype', excerpt: 'Why I optimize for durability over novelty, and what a 200-year-old oak taught me about technical debt.' },
-  { date: 'MAR 2026', title: 'Tiny models, big forests', excerpt: 'Notes from a year of running machine learning on hardware that costs less than lunch.' },
-  { date: 'JAN 2026', title: 'The ergonomics of slowness', excerpt: 'Fast tools make fast decisions. Sometimes the kindest interface is one that makes you wait.' },
-  { date: 'NOV 2025', title: 'Reading the rings', excerpt: 'A field guide to understanding a codebase by its history rather than its current shape.' },
-];
-
 const CERTS = [
   { name: 'Azure Data Engineer Associate', issuer: 'Microsoft',  year: '2024' },
   { name: 'Google Cloud Digital Leader',   issuer: 'Google',     year: '2023' },
@@ -176,4 +169,4 @@ const SOCIAL = [
   { label: 'Email',    href: 'mailto:nicolasmora02@outlook.com',                     icon: 'mail'       },
 ];
 
-Object.assign(window, { PROJECTS, NOTES, CERTS, SOCIAL });
+Object.assign(window, { PROJECTS, CERTS, SOCIAL });

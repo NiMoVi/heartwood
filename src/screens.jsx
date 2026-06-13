@@ -1,4 +1,4 @@
-/* Heartwood Portfolio UI Kit — screens + app shell */
+/* Heartwood Portfolio UI Kit - screens + app shell */
 
 function Home({ go, openProject }) {
   return (
@@ -8,7 +8,7 @@ function Home({ go, openProject }) {
           <div>
             <div className="rise d1"><MonoLabel>Senior Consultant · AI & Analytics · Deloitte</MonoLabel></div>
             <h1 className="rise d2">I build data systems that <i>make decisions</i>, not just dashboards.</h1>
-            <p className="lede rise d3">AI engineer and data architect with experience across federal and state governments, including in defense, finance, health and lottery departments. I work at the intersection of cloud infrastructure, agentic AI, and analytics: shipping production systems, not prototypes.</p>
+            <p className="lede rise d3">AI engineer and data architect. Most of my work has been for federal and state agencies across defense, finance, health, and lottery. I build cloud infrastructure, design agentic workflows, and ship production systems. Been doing it for five years at Deloitte.</p>
             <div className="hero-cta rise d4">
               <Button variant="primary" onClick={() => { const el = document.getElementById('work'); if (el) window.scrollTo({ top: el.offsetTop - 40, behavior: 'smooth' }); }}>View my work <Icon name="arrow-down" size={17} /></Button>
               <Button variant="ghost" onClick={() => go('contact')}>Get in touch</Button>
@@ -152,7 +152,7 @@ function Contact() {
         <MonoLabel>Get in touch</MonoLabel>
       </div>
       <h2 className="rise d2">Open to <i>conversation</i>.</h2>
-      <p className="rise d3">I'm a Senior Consultant at Deloitte based in Alexandria, VA. If you're working on something in AI, data engineering, or analytics, or you just want to connect, I'd love to hear from you.</p>
+      <p className="rise d3">Based in Alexandria, VA. If you're working on something in AI, data engineering, or analytics, I'm happy to talk. Or if you just want to connect, reach out.</p>
       <div className="contact-links rise d4">
         {SOCIAL.map(s => (
           <a key={s.label}
@@ -187,9 +187,9 @@ function About({ go }) {
           </a>
         </div>
         <div className="about-bio rise d3">
-          <p>I'm a Senior Consultant in AI &amp; Analytics at Deloitte, where I've spent the last five years building the data systems that actually run large enterprises, not the slides that describe them. My work spans data pipeline architecture, agentic AI workflows, and BI platforms deployed across federal and state government clients.</p>
-          <p>Before Deloitte, I served as a vehicle mechanic in the U.S. Army Reserve from 2013 to 2019. That background (planning under uncertainty, leading technical teams, executing against hard deadlines) shapes how I approach engineering work. I studied International Business at Florida International University, graduating Cum Laude, and then moved into data engineering as AI started becoming a real part of enterprise infrastructure.</p>
-          <p>What makes my work distinct is that I build and I consult. I write Python and SQL every day. I've shipped production Synapse pipelines, designed agentic document review systems using Claude, and led BI modernization programs for organizations with millions of stakeholders. I'm not a generalist who knows a little about everything. I'm a data and AI specialist who understands the full stack from warehouse to dashboard to autonomous agent.</p>
+          <p>I'm a Senior Consultant in AI &amp; Analytics at Deloitte. Five years in, and most of what I've built has been for federal and state government clients: data pipelines, agentic AI workflows, BI platforms. The kind of work where the system still has to run after you leave.</p>
+          <p>Before Deloitte, I spent six years as a vehicle mechanic in the U.S. Army Reserve. That background stays with you: get the plan right, execute under pressure, and own it when something breaks. I studied International Business at Florida International University, graduated Cum Laude, and got into data engineering right around the time AI started showing up in production at scale.</p>
+          <p>I code every day. Python, SQL, whatever the job needs. I've shipped Synapse pipelines, built agentic document review systems with Claude, and led BI modernization programs for agencies serving millions of people. The consulting side and the building side aren't separate for me. I stay technical on purpose.</p>
           <div className="about-langs">
             <MonoLabel line={false}>Languages</MonoLabel>
             <span className="chip">English</span>

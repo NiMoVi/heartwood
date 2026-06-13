@@ -4,7 +4,7 @@ milestone: v1.1
 milestone_name: Real Projects Content Refresh
 status: planning
 last_updated: "2026-06-03T00:00:00Z"
-last_activity: 2026-06-08 - Completed quick task 260607-sfe: Add dynamic side padding for mobile/small screens
+last_activity: 2026-06-13 - Completed quick task 260613-mmq: Rewrite all website copy to match professional-casual voice
 progress:
   total_phases: 2
   completed_phases: 2
@@ -63,3 +63,4 @@ See: .planning/PROJECT.md (updated 2026-06-03)
 | 260603-mwi | Add demo modal button and cover image to professional-networking-app detail page | 2026-06-03 | f8b4d6c | [260603-mwi-add-demo-modal-button-and-cover-image-to](./quick/260603-mwi-add-demo-modal-button-and-cover-image-to/) |
 | 260603-o6y | flip project order to show newest projects first | 2026-06-03 | 1a89ec9 | [260603-o6y-flip-project-order-to-show-newest-projec](./quick/260603-o6y-flip-project-order-to-show-newest-projec/) |
 | 260607-sfe | Add dynamic side padding for mobile/small screens | 2026-06-08 | — | [260607-sfe-add-dynamic-side-padding-for-mobile-smal](./quick/260607-sfe-add-dynamic-side-padding-for-mobile-smal/) |
+| 260613-mmq | Rewrite all website copy to match professional-casual voice | 2026-06-13 | 9568bb4 | [260613-mmq-rewrite-all-website-copy-to-be-professio](./quick/260613-mmq-rewrite-all-website-copy-to-be-professio/) |

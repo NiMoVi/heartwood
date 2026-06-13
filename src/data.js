@@ -25,11 +25,11 @@ const PROJECTS = [
       Client: 'Personal',
     },
     body: [
-      'I co-built a mobile app that helps attendees at professional events find the right people, not just any people. Before an event, the app surfaces relevant connections based on professional profiles. During it, you get context on who you\'re talking to. After, it structures the follow-up so conversations don\'t just disappear. The product is built for the DMV-area professional events market and is coming to the Apple App Store and Google Play Store.',
+      'I co-built a mobile app that helps attendees at professional events find the right people. Before an event, the app surfaces relevant connections based on professional profiles. During it, you get context on who you\'re talking to. After, it structures follow-up so the conversations that mattered actually continue. The product is built for the DMV-area professional events market and is coming to the Apple App Store and Google Play Store.',
       'The stack is React Native with Expo for cross-platform mobile, a Node.js/Express API, PostgreSQL with pgvector for semantic profile matching, and the Anthropic Claude API for the facilitation layer. Infrastructure runs on Docker and deploys via Railway. I used Claude Code and GitHub Copilot throughout the build as development accelerants.',
       'Building this end-to-end has meant owning everything: mobile UI, API design, database schema, AI integration, and deployment. That was a deliberate choice. The consulting work gives me depth in one layer at a time. This gave me the full picture.',
     ],
-    pull: 'The best networking tool isn\'t one that connects everyone. It\'s one that connects the right people.',
+    pull: 'Connecting everyone is easy. Connecting the right people is the product.',
   },
 
   // ── PERS-02: SQL Modernization Tools ─────────────────────────────────────
@@ -100,9 +100,9 @@ const PROJECTS = [
     body: [
       'I led a team to design and build a three-tool Power App covering budget resource management, grants management, and cash management, with Power BI dashboards surfacing the key metrics for each. My role was both technical and internal-consulting: I worked with subject matter experts on each financial domain to get the data models right, and I set UI standards across all three tools so the suite felt like one product.',
       'The platform runs on the Microsoft Power Platform stack: Power Apps for the application layer, Power Query for data transformation, Power BI for dashboarding. The architecture is modular by design. Each tool deploys independently, and the dashboard templates are parameterized so they can be customized per client without a rebuild from scratch.',
-      'The result was a replicable multi-client solution. Adapting it to a new federal environment takes configuration changes, not a ground-up build. That compresses future delivery timelines and reduces the risk of inconsistent implementations across similar engagements.',
+      'The result was a replicable multi-client solution. A new federal environment can be onboarded through configuration. You don\'t need to rebuild. That compresses future delivery timelines and reduces the risk of inconsistent implementations across similar engagements.',
     ],
-    pull: 'A platform that only works once isn\'t a platform. It\'s a custom build you have to repeat.',
+    pull: 'A platform that has to be rebuilt for every client is just an expensive one-off.',
   },
 
   // ── CONS-03: State Lottery Cloud Migration ────────────────────────────────
@@ -147,7 +147,7 @@ const PROJECTS = [
     },
     body: [
       'I led the design and build of a unified golden-record repository that pulled demographic data from all 10+ source departments, resolved duplicate identities through a deduplication pipeline, and enforced row-level security so each department could see their own data and the shared aggregate, but nothing more. The work included survey integration, new data models, stored procedures for ongoing ingestion, and a cloud migration to Azure Synapse Analytics.',
-      'The stack was SQL and SSMS for transformation logic, SSIS for pipeline orchestration, Python/Spark for deduplication at scale, and Azure Synapse Analytics as the cloud destination. Data models were designed for longitudinal tracking. The goal wasn\'t a one-time export but a living repository that grows with the population.',
+      'The stack was SQL and SSMS for transformation logic, SSIS for pipeline orchestration, Python/Spark for deduplication at scale, and Azure Synapse Analytics as the cloud destination. Data models were designed for longitudinal tracking. The goal was a living repository that grows with the population over time.',
       'The repository became the first of its kind for the agency: a single place where health inequities could be surfaced with confidence in the underlying data. Other state health departments started replicating the approach after seeing the results, extending the impact well beyond the original engagement.',
     ],
     pull: 'The data had always existed. What was missing was a single place where it could be trusted.',

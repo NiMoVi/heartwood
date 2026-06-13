@@ -7,8 +7,8 @@ function Home({ go, openProject }) {
         <div className="hero-grid">
           <div>
             <div className="rise d1"><MonoLabel>Senior Consultant · AI & Analytics · Deloitte</MonoLabel></div>
-            <h1 className="rise d2">I build data systems that <i>make decisions</i>, not just dashboards.</h1>
-            <p className="lede rise d3">AI engineer and data architect. Most of my work has been for federal and state agencies across defense, finance, health, and lottery. I build cloud infrastructure, design agentic workflows, and ship production systems. Been doing it for five years at Deloitte.</p>
+            <h1 className="rise d2">I build data systems that <i>drive decisions</i>.</h1>
+            <p className="lede rise d3">AI engineer and data architect. Five years at Deloitte, mostly building data systems for federal and state agencies across defense, finance, health, and lottery. Cloud pipelines, agentic workflows, production deployments.</p>
             <div className="hero-cta rise d4">
               <Button variant="primary" onClick={() => { const el = document.getElementById('work'); if (el) window.scrollTo({ top: el.offsetTop - 40, behavior: 'smooth' }); }}>View my work <Icon name="arrow-down" size={17} /></Button>
               <Button variant="ghost" onClick={() => go('contact')}>Get in touch</Button>
@@ -189,7 +189,7 @@ function About({ go }) {
         <div className="about-bio rise d3">
           <p>I'm a Senior Consultant in AI &amp; Analytics at Deloitte. Five years in, and most of what I've built has been for federal and state government clients: data pipelines, agentic AI workflows, BI platforms. The kind of work where the system still has to run after you leave.</p>
           <p>Before Deloitte, I spent six years as a vehicle mechanic in the U.S. Army Reserve. That background stays with you: get the plan right, execute under pressure, and own it when something breaks. I studied International Business at Florida International University, graduated Cum Laude, and got into data engineering right around the time AI started showing up in production at scale.</p>
-          <p>I code every day. Python, SQL, whatever the job needs. I've shipped Synapse pipelines, built agentic document review systems with Claude, and led BI modernization programs for agencies serving millions of people. The consulting side and the building side aren't separate for me. I stay technical on purpose.</p>
+          <p>I code every day. Python, SQL, whatever the job needs. I've shipped Synapse pipelines, built agentic document review systems with Claude, and led BI modernization programs for agencies serving millions of people. Consulting and building happen in the same week for me. That's intentional.</p>
           <div className="about-langs">
             <MonoLabel line={false}>Languages</MonoLabel>
             <span className="chip">English</span>

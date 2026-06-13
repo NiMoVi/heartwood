@@ -20,7 +20,7 @@ function Home({ go, openProject }) {
             </div>
           </div>
           <div className="portrait rise d3">
-            <span className="ph-tag">◦ PORTRAIT: drop image</span>
+            <img src="assets/portrait.jpg" alt="Nico Mora" className="portrait-img" />
           </div>
         </div>
       </section>

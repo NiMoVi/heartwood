@@ -22,18 +22,38 @@ function Button({ variant = 'primary', children, onClick }) {
 
 /* ---- header ---- */
 function Header({ view, go, theme, toggleTheme }) {
+  const [menuOpen, setMenuOpen] = useState(false);
   const links = [['home', 'Work'], ['about', 'About'], ['contact', 'Contact']];
+
+  const handleNavClick = (k) => {
+    go(k);
+    setMenuOpen(false);
+  };
+
   return (
     <header className="hdr">
       <div className="wrap hdr-in">
-        <a className="brand" onClick={() => go('home')}>
+        <a className="brand" href="#" onClick={e => { e.preventDefault(); handleNavClick('home'); }}>
           <img src="assets/mark.svg" alt="" />
           <span className="wm">Nico <i>Mora</i></span>
         </a>
-        <nav className="nav">
+        <button
+          className={`hamburger${menuOpen ? ' open' : ''}`}
+          onClick={() => setMenuOpen(o => !o)}
+          aria-label={menuOpen ? 'Close menu' : 'Open menu'}
+          aria-expanded={menuOpen}
+          aria-controls="main-nav"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <nav className={`nav${menuOpen ? ' nav-open' : ''}`} id="main-nav">
           {links.map(([k, label]) => (
-            <a key={k} className={view === k || (k === 'home' && view === 'project') ? 'active' : ''}
-               onClick={() => go(k)}>{label}</a>
+            <a key={k}
+               href="#"
+               className={view === k || (k === 'home' && view === 'project') ? 'active' : ''}
+               onClick={e => { e.preventDefault(); handleNavClick(k); }}>
+              {label}
+            </a>
           ))}
           <button className="theme-btn" onClick={toggleTheme} aria-label="Toggle theme">
             <Icon name={theme === 'dark' ? 'sun' : 'moon'} size={17} />

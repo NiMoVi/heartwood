@@ -31,7 +31,7 @@ function Home({ go, openProject }) {
             <MonoLabel>Selected work</MonoLabel>
             <h2>Selected work</h2>
           </div>
-          <a className="link" onClick={() => go('about')}>About Nico <Icon name="arrow-right" size={15} /></a>
+          <a className="link" href="#" onClick={e => { e.preventDefault(); go('about'); }}>About Nico <Icon name="arrow-right" size={15} /></a>
         </div>
         <div className="work-grid">
           {PROJECTS.map((p, i) => (
@@ -48,7 +48,7 @@ function ProjectDetail({ p, go, openProject }) {
   const next = PROJECTS[(PROJECTS.indexOf(p) + 1) % PROJECTS.length];
   return (
     <article className="detail wrap">
-      <a className="back" onClick={() => go('home')}><Icon name="arrow-left" size={14} /> ALL WORK</a>
+      <a className="back" href="#" onClick={e => { e.preventDefault(); go('home'); }}><Icon name="arrow-left" size={14} /> ALL WORK</a>
       <div className="rise d1"><MonoLabel>{p.n} / {p.year} · {p.kind}</MonoLabel></div>
       <h1 className="rise d2">{p.title}</h1>
       <p className="lede rise d2">{p.lede}</p>
@@ -91,7 +91,15 @@ function ProjectDetail({ p, go, openProject }) {
           <div className="sec-head" style={{ marginTop: 56, marginBottom: 20 }}>
             <div><MonoLabel>Next</MonoLabel></div>
           </div>
-          <article className="work-card" style={{ maxWidth: 380 }} onClick={() => openProject(next)}>
+          <article
+            className="work-card"
+            style={{ maxWidth: 380 }}
+            onClick={() => openProject(next)}
+            role="button"
+            tabIndex={0}
+            onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openProject(next); } }}
+            aria-label={next.title}
+          >
             <div className={`wc-thumb ${next.accent ? 'amber' : ''}`} style={{ height: 130 }}></div>
             <div className="wc-body">
               <div className="wc-top"><span className="wc-meta">{next.n} / {next.kind}</span><span className="wc-arr"><Icon name="arrow-up-right" size={18} /></span></div>
@@ -109,7 +117,6 @@ function ProjectDetail({ p, go, openProject }) {
               title={`${p.title} demo`}
               width="100%"
               height="100%"
-              frameBorder="0"
               sandbox="allow-scripts allow-same-origin"
               style={{ display: 'block', border: 'none' }}
             />

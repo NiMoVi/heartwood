@@ -219,7 +219,7 @@ button { font-family: inherit; cursor: pointer; }
   margin: 0 auto; max-width: 480px;
 }
 .contact-link {
-  display: flex; align-items: center; gap: 10px;
+  display: flex; align-items: center; justify-content: center; gap: 10px;
   font-size: 15px; color: var(--fg-2); font-weight: 500;
   padding: 14px 22px; border: 1px solid var(--border);
   border-radius: var(--radius-pill);
@@ -281,6 +281,9 @@ button { font-family: inherit; cursor: pointer; }
 
   .section { padding-block: 48px; }
   .contact { padding-block: 64px; }
+  .detail { padding-block: 40px 32px; }
+  .detail-hero { height: 220px; }
+  .back { padding: 10px 0; display: inline-block; }
 
 }
 

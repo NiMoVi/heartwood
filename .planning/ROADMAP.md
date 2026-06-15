@@ -73,21 +73,22 @@ Plans:
 | 2. Content & Pages | v1.0 | 5/5 | Complete | 2026-06-03 |
 | 3. Polish & Deploy | v1.0 | 3/3 | Complete | 2026-06-03 |
 | 4. Project Content Authoring | v1.1 | 1/1 | Complete | 2026-06-03 |
-| 5. Implementation & Validation | v1.1 | 0/2 | Not started | - |
+| 5. Implementation & Validation | v1.1 | 2/2 | Complete | 2026-06-03 |
+| 6. Mobile & UI Improvements | v1.2 | 4/4 | Complete   | 2026-06-15 |
 
 ### Phase 6: Make recommended mobile and UI improvements
 
 **Goal**: All 13 identified mobile, accessibility, and CDN correctness issues are resolved — the site is usable on 375px phones, keyboard-navigable, and loading production React builds with pinned dependencies.
 **Requirements**: MOB-01, MOB-02, MOB-03, MOB-04, MOB-05, MOB-06, MOB-07, MOB-08, MOB-09, MOB-10, MOB-11, MOB-12
 **Depends on:** Phase 5
-**Plans:** 4 plans
+**Plans:** 4/4 plans complete
 
 Plans:
-- [ ] 06-01-PLAN.md — CSS-only fixes: modal overflow, portrait max-height, section/contact padding, sec-head wrap, contact pills, nav touch target
-- [ ] 06-02-PLAN.md — Hamburger nav: Header useState toggle + hamburger/mobile-nav CSS
-- [ ] 06-03-PLAN.md — JSX correctness: WorkCard a11y, next-card a11y, href fixes, frameBorder removal, dynamic footer date
-- [ ] 06-04-PLAN.md — CDN correctness: React/ReactDOM production builds + Lucide 1.18.0 pin with SRI hashes
+- [x] 06-01-PLAN.md — CSS-only fixes: modal overflow, portrait max-height, section/contact padding, sec-head wrap, contact pills, nav touch target
+- [x] 06-02-PLAN.md — Hamburger nav: Header useState toggle + hamburger/mobile-nav CSS
+- [x] 06-03-PLAN.md — JSX correctness: WorkCard a11y, next-card a11y, href fixes, frameBorder removal, dynamic footer date
+- [x] 06-04-PLAN.md — CDN correctness: React/ReactDOM production builds + Lucide 1.18.0 pin with SRI hashes
 
 ---
 
-*Last updated: 2026-06-14 — Phase 6 planned (4 plans)*
+*Last updated: 2026-06-14 — Phase 6 in progress (1/4 plans complete: CSS mobile fixes)*

@@ -2,14 +2,14 @@
 gsd_state_version: 1.0
 milestone: v1.1
 milestone_name: Real Projects Content Refresh
-status: planning
-last_updated: "2026-06-03T00:00:00Z"
-last_activity: 2026-06-13 - Completed quick task 260613-mmq: Rewrite all website copy to match professional-casual voice
+status: executing
+last_updated: "2026-06-15T01:22:55.191Z"
+last_activity: 2026-06-15
 progress:
-  total_phases: 2
-  completed_phases: 2
-  total_plans: 3
-  completed_plans: 3
+  total_phases: 3
+  completed_phases: 3
+  total_plans: 7
+  completed_plans: 7
   percent: 0
 ---
 
@@ -20,10 +20,10 @@ progress:
 
 ## Current Phase
 
-Phase: 05 of 5 (implementation & validation)
-Plan: Not started
-Status: Ready to plan
-Last activity: 2026-06-03
+Phase: 06 of 6 (make-recommended-mobile-and-ui-improvements)
+Plan: 06-01 complete (1 of 4)
+Status: In progress
+Last activity: 2026-06-15
 
 Progress: [░░░░░░░░░░] 0% (v1.1)
 
@@ -32,7 +32,7 @@ Progress: [░░░░░░░░░░] 0% (v1.1)
 See: .planning/PROJECT.md (updated 2026-06-03)
 
 **Core value:** A recruiter or collaborator immediately understands Nico is a technically deep AI/Data professional who ships real things.
-**Current focus:** Phase 05 — implementation-validation
+**Current focus:** Phase 06 — make-recommended-mobile-and-ui-improvements
 
 ## Accumulated Context
 
@@ -44,6 +44,14 @@ See: .planning/PROJECT.md (updated 2026-06-03)
 - Nico is always the subject; AI tools (Claude Code, Copilot) are the method
 - 2 of 6 entries carry accent: true; must be non-adjacent in array order
 - All 5 facts{} keys required per entry: Role, Year, Stack, Status, Client
+- [Phase 06]: Used CSS min(430px, 94vw) for modal width cap rather than a media query override
+- [Phase 06]: Portrait max-height placed in 860px breakpoint so it applies to all mobile/tablet widths
+- [Phase 06]: sec-head flex-wrap limited to 480px block to preserve inline layout on wider screens
+- [Phase 06]: Nav links use href='#' + e.preventDefault() for keyboard accessibility in hamburger menu
+- [Phase 06]: hamburger display:none globally, overridden to display:flex inside 480px breakpoint — no min-width query needed
+- [Phase 06-03]: Keyboard accessibility pattern: role='button' tabIndex={0} onKeyDown on non-anchor interactive elements
+- [Phase 06-03]: SPA link correctness: all anchor navigation tags carry href='#' and e.preventDefault() to enable keyboard focus
+- [Phase 06]: Switch React 18.3.1 and ReactDOM 18.3.1 to production.min.js CDN builds with SRI hashes; pin Lucide to 1.18.0 with SRI
 
 ### Key Blockers
 
@@ -52,6 +60,10 @@ See: .planning/PROJECT.md (updated 2026-06-03)
 ### Open Questions
 
 (none)
+
+### Roadmap Evolution
+
+- Phase 6 added: Make recommended mobile and UI improvements
 
 ### Quick Tasks Completed
 

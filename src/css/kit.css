@@ -306,3 +306,41 @@ button { font-family: inherit; cursor: pointer; }
   background: transparent; border: none;
   color: #fff; font-size: 20px; cursor: pointer; line-height: 1;
 }
+
+/* ---------- hamburger nav (mobile) ---------- */
+.hamburger {
+  display: none;
+  flex-direction: column; justify-content: center; gap: 5px;
+  width: 44px; height: 44px;
+  background: transparent; border: none; padding: 8px;
+  cursor: pointer; border-radius: var(--radius-sm);
+}
+.hamburger span {
+  display: block; height: 2px; width: 22px;
+  background: var(--fg-2);
+  transition: transform var(--dur-base) var(--ease-organic),
+              opacity var(--dur-fast) var(--ease-out);
+}
+.hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity: 0; }
+.hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+@media (max-width: 480px) {
+  .hamburger { display: flex; }
+
+  .nav {
+    display: none;
+    position: absolute; top: 56px; left: 0; right: 0;
+    flex-direction: column; gap: 0;
+    background: color-mix(in srgb, var(--bg) 95%, transparent);
+    border-bottom: 1px solid var(--border);
+    padding: 8px 0;
+    backdrop-filter: blur(14px);
+  }
+  .nav.nav-open { display: flex; }
+  .nav a {
+    padding: 14px 24px;
+    font-size: 16px;
+  }
+  .theme-btn { margin: 8px 24px; }
+}

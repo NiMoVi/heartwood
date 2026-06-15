@@ -281,7 +281,6 @@ button { font-family: inherit; cursor: pointer; }
 
   .section { padding-block: 48px; }
   .contact { padding-block: 64px; }
-  .sec-head { flex-wrap: wrap; gap: 16px; align-items: flex-start; }
 
 }
 

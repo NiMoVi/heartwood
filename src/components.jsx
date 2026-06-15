@@ -66,8 +66,18 @@ function Header({ view, go, theme, toggleTheme }) {
 
 /* ---- work card ---- */
 function WorkCard({ p, onClick, delay }) {
+  const handleKey = (e) => {
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onClick(); }
+  };
   return (
-    <article className={`work-card rise ${delay}`} onClick={onClick}>
+    <article
+      className={`work-card rise ${delay}`}
+      onClick={onClick}
+      role="button"
+      tabIndex={0}
+      onKeyDown={handleKey}
+      aria-label={p.title}
+    >
       <div className={`wc-thumb ${p.accent || p.heroAccent ? 'amber' : ''}`}></div>
       <div className="wc-body">
         <div className="wc-top">
@@ -99,7 +109,7 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="wrap footer-in">
-        <span className="coord">LAST TENDED · JUN 2026</span>
+        <span className="coord">{`LAST TENDED · ${new Date().toLocaleDateString('en-US', { month: 'short', year: 'numeric' }).toUpperCase()}`}</span>
         <div className="socials">
           {SOCIAL.map(s => (
             <a key={s.label}

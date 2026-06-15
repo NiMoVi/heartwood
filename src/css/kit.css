@@ -135,6 +135,7 @@ button { font-family: inherit; cursor: pointer; }
   transition: all var(--dur-base) var(--ease-organic); cursor: pointer;
 }
 .work-card:hover { border-color: var(--border-strong); box-shadow: var(--shadow-lg), var(--glow-sm); transform: translateY(-3px); }
+.work-card:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-color: var(--border-strong); }
 .wc-thumb { height: 200px; position: relative; overflow: hidden;
   background: radial-gradient(120% 120% at 30% 0%, rgba(139,224,106,0.16), transparent 60%), linear-gradient(160deg, #182A21, #0E1812); }
 .wc-thumb.amber { background: radial-gradient(120% 120% at 30% 0%, rgba(230,169,78,0.18), transparent 60%), linear-gradient(160deg, #2A2317, #0E1812); }
@@ -256,6 +257,7 @@ button { font-family: inherit; cursor: pointer; }
 /* --- 480px: small phones ------------------------------------------ */
 @media (max-width: 480px) {
   .wrap { padding: 0 20px; }
+  .sec-head { flex-wrap: wrap; gap: 16px; align-items: flex-start; }
   /* Reduces side gutter: 375px - 40px = 335px content width */
 
   .hero { padding-block: 56px 48px; }

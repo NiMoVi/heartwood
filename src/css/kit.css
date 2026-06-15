@@ -248,6 +248,7 @@ button { font-family: inherit; cursor: pointer; }
 
 @media (max-width: 860px) {
   .hero-grid { grid-template-columns: 1fr; }
+  .portrait { max-height: 280px; }
   .work-grid { grid-template-columns: 1fr; }
   .detail-cols { grid-template-columns: 1fr; gap: 28px; }
   .nav { gap: 18px; }
@@ -300,7 +301,7 @@ button { font-family: inherit; cursor: pointer; }
 }
 .demo-modal-inner {
   position: relative;
-  width: 430px; height: 90vh; max-height: 900px;
+  width: min(430px, 94vw); height: 90vh; max-height: 900px;
   background: #000; border-radius: 16px; overflow: hidden;
 }
 .demo-modal-close {

@@ -77,3 +77,4 @@ See: .planning/PROJECT.md (updated 2026-06-03)
 | 260607-sfe | Add dynamic side padding for mobile/small screens | 2026-06-08 | f7aadb0 | [260607-sfe-add-dynamic-side-padding-for-mobile-smal](./quick/260607-sfe-add-dynamic-side-padding-for-mobile-smal/) |
 | 260607-sow | Remove em dashes from website text throughout | 2026-06-08 | 2d79ab3 | [260607-sow-remove-em-dashes-from-website-text-throu](./quick/260607-sow-remove-em-dashes-from-website-text-throu/) |
 | 260613-mmq | Rewrite all website copy to match professional-casual voice | 2026-06-13 | 9568bb4 | [260613-mmq-rewrite-all-website-copy-to-be-professio](./quick/260613-mmq-rewrite-all-website-copy-to-be-professio/) |
+| 260619-dsp | Add Google Analytics tracking tag to portfolio | 2026-06-19 | ffe2cb9 | [260619-dsp-add-google-analytics-tracking-tag-to-por](./quick/260619-dsp-add-google-analytics-tracking-tag-to-por/) |

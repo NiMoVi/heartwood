@@ -98,7 +98,7 @@ button { font-family: inherit; cursor: pointer; }
   line-height: 1.04; letter-spacing: -0.025em; margin: 22px 0 0;
 }
 .hero h1 i { font-style: italic; color: var(--accent); }
-.hero p.lede { font-size: 19px; line-height: 1.65; color: var(--fg-2); margin: 26px 0 34px; max-width: 46ch; }
+.hero p.lede { font-size: 22px; line-height: 1.65; color: var(--fg-2); margin: 26px 0 34px; max-width: 46ch; }
 .hero-cta { display: flex; gap: 14px; }
 .portrait {
   aspect-ratio: 4 / 5; border-radius: var(--radius-lg); border: 1px solid var(--border);

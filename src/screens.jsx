@@ -7,7 +7,6 @@ function Home({ go, openProject }) {
         <div className="hero-grid">
           <div>
             <div className="rise d1"><MonoLabel>Senior Consultant · AI & Analytics · Deloitte</MonoLabel></div>
-            <h1 className="rise d2">I build data systems that <i>drive decisions</i>.</h1>
             <p className="lede rise d3">AI engineer and data architect with five years at Deloitte building production data systems for federal and state government across defense, finance, health, and lottery. My work covers cloud infrastructure, agentic AI, and analytics.</p>
             <div className="hero-cta rise d4">
               <Button variant="primary" onClick={() => { const el = document.getElementById('work'); if (el) window.scrollTo({ top: el.offsetTop - 40, behavior: 'smooth' }); }}>View my work <Icon name="arrow-down" size={17} /></Button>
